@@ -1,0 +1,10 @@
+<svg version="1.1" width="240" height="32" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text {
+      text-anchor: middle;
+      font: small-caps 32px "Open Sans", "Roboto", sans-serif;
+      fill: white;
+    }
+  </style>
+  <text x="50%" y="32">Nathaniel Mata</text>
+</svg>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathaniel Mata Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="index.css" rel="stylesheet" type="text/css">
+
+  <link rel="icon" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/icon.png">
+</head>
+
+<body>
+  <div class="container">
+    <header class="blue">
+      <div class="header__logo">
+        <picture>
+          <source media="(max-width: 414px)" srcset="images/logo-100w.svg">
+          <source media="(min-width: 415px)" srcset="images/logo-240w.svg">
+          <img src="images/logo-240w.svg" alt="Nathaniel Mata site logo">
+        </picture>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="hero blue">
+        <div class="hero__inner">
+          <div class="hero__image">
+            <div class="hero__image--inner">
+              <img src="images/hero.gif" alt="Nathaniel Mata portrait" />
+            </div>
+          </div>
+          <div class="hero__text">
+            <h1>I am a Web Developer living in Tempe, AZ.</h1>
+            <p>I like to use HTML, CSS, Javascript and sometimes Golang to build things. When I'm not writing code I
+              like
+              to drink coffee, play soccer and read about new technologies.</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact blue">
+        <h3>Contact Me</h3>
+        <ul class="ul__btns contact__btns">
+          <li><a href="https://github.com/nathanielmata">Github</a></li>
+          <li><a href="https://twitter.com/thepixelparty">Twitter</a></li>
+          <li><a href="mailto:nathaniel@thepixelparty.com">Email</a></li>
+        </ul>
+      </section>
+      <section id="portfolio" class="section__container portfolio white">
+        <div class="section__inner portfolio__inner">
+          <h1>Projects</h1>
+
+          <div class="project">
+            <div class="project__image">
+              <img src="images/quizapp.png" alt="Time, Distance, Speed Quiz App" />
+            </div>
+            <div class="project__text">
+              <h2>Quiz App</h2>
+              <p>This javascript app will test your knowledge of calculating Time, Distance and Speed using a given
+                formula.
+              </p>
+              <ul class="project__stack">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>jQuery</li>
+              </ul>
+            </div>
+            <div class="project_links">
+              <ul class="ul__btns project__btns">
+                <li><a href="https://nathanielmata.github.io/quizapp">Demo</a></li>
+                <li><a href="https://github.com/nathanielmata/quizapp">Code</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="section__container blue">
+        <div class="section__inner">
+          <h1>About Me</h1>
+          <div class="about__text">
+            <p>
+              I've always loved creative problem solving. I've worked in the fields of commercial photography, graphic
+              design and digital fabrication all of which required a thoughtful approach to artfully achieve the
+              completion of projects. All of this informs my approach to web development in which collaboration and an
+              enthusiasm for continuous improvement and learning are key characteristics that I bring to each project.
+              <br /><br />
+              When I'm not working on HTML, Javascript and CSS I'm often found reading about the Golang programming
+              language.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="section__container white">
+        <div class="section__inner">
+          <h1>Skills</h1>
+          <div class="skills__text">
+            <ul>
+              <li>
+                <h5>Languages</h4>
+                  <p>HTML5, CSS3, Javascript</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <h5>Libraries</h4>
+                  <p>jQuery & ReactJS</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <h5>Databases</h4>
+                  <p>PostgreSQL & MySQL</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+  <footer>
+    <div class="footer__copy">© Nathaniel Mata <span id="footer__date" class="footer__date"></span></div>
+    <script>
+      let yearDate = new Date().getUTCFullYear();
+      let copyDate = document.getElementById("footer__date");
+      copyDate.innerHTML = yearDate;
+    </script>
+  </footer>
+</body>
+
+</html>
