@@ -79,7 +79,7 @@ section {
 
 .hero {
   position: relative;
-  padding: 28px;
+  padding: 28px 28px 14px;
 }
 
 .hero__inner {
@@ -118,7 +118,7 @@ section {
 }
 
 .contact {
-  padding: 0 1em;
+  padding: 14px 28px 28px;
   text-align: center;
 }
 
@@ -130,7 +130,7 @@ section {
   display: flex;
   flex-direction: row;
   text-align: center;
-  padding: 0 0 30px;
+  padding: 0;
   margin: 0;
 }
 
