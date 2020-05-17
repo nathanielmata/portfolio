@@ -1,5 +1,5 @@
 // simple hamburger menu implementation
-let watchMenu = (function() {
+let watchNav = (function() {
   function show(event) {
     $('nav').css('visibility', 'visible').css('opacity', 1);
     event.type == 'click'
@@ -7,31 +7,38 @@ let watchMenu = (function() {
       : $('#hero').removeAttr('style');
   }
 
-  function hide(event) {
+  function hide() {
     $('nav').css('visibility', 'hidden').css('opacity', 0);
     $('#hero').attr('style', '');
   }
 
+  function handleMenuItemClick() {
+    $('nav').on('click', 'a', function() {
+      hide();
+    })
+  }
+
   // watch .nav__toggle click and update nav 
-  function handleClick() {
-    $('#js-nav__toggle').on('click', function(e) {
-      $('nav').css('visibility') == 'hidden' ? show(e) : hide(e);
+  function handleNavToggleClick() {
+    $('#js-nav__toggle').on('click', function(event) {
+      $('nav').css('visibility') == 'hidden' ? show(event) : hide();
     })
   }
 
   // watch window resize and update nav 
   function handleResize() {
-    $(window).resize(function(e) {
-      $(window).width() > 415 ? show(e) : hide(e);
+    $(window).resize(function(event) {
+      $(window).width() > 415 ? show(event) : hide();
     });
   }
 
   return {
     watch: function () {
-      handleClick();
+      handleMenuItemClick();
+      handleNavToggleClick();
       handleResize();
     }
   }
 })();
 
-$(watchMenu.watch());
+$(watchNav.watch());
