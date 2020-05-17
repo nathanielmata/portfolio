@@ -223,6 +223,8 @@ section {
   padding: 0;
   margin: 24px auto;
   width: 100%;
+  column-count: 2;
+  column-gap: 0;
 }
 
 .project__stack li {
@@ -231,6 +233,7 @@ section {
   margin: 5px;
   border-radius: 1px;
   background-color: rgb(237, 227, 228, 0.3);
+  width: 90%;
 }
 
 .skills__text ul {
@@ -334,6 +337,14 @@ footer {
 
   .ul__btns {
     padding: 0 56px 30px;
+  }
+
+  .project__stack {
+    column-count: unset;
+  }
+  
+  .project__stack li {
+    width: auto;
   }
 
   .skills__text {
