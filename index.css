@@ -49,6 +49,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 ul {
   display: block;
   list-style: none;
@@ -190,15 +194,6 @@ section {
   margin: 8px;
 }
 
-.contact__btns a {
-  border: thin solid #fefcfb;
-  color: #fefcfb;
-}
-
-.contact__btns a:hover {
-  background-color: #0050ab;
-}
-
 .section__container {
   padding: 28px;
 }
@@ -219,15 +214,6 @@ section {
 
 .project__text {
   margin: 10px;
-}
-
-.project__btns a {
-  border: thin solid #011627;
-  color: #011627;
-}
-
-.project__btns a:hover {
-  background-color: #0050ab;
 }
 
 .project__stack {
@@ -280,6 +266,30 @@ footer {
 
 .footer__copy {
   font-size: 14px;
+}
+
+
+/* reusable anchor styles for button look */
+
+.a__btn-blue {
+  border: thin solid #fefcfb;
+  color: #fefcfb;
+}
+
+.a__btn-blue:hover {
+  color: #053b9b;
+  background-color: #fefcfb;
+}
+
+.a__btn-white {
+  border: thin solid #011627;
+  color: #011627;
+}
+
+.a__btn-white:hover {
+  color: #fefcfb;
+  border: thin solid #0050ab;
+  background-color: #0050ab;
 }
 
 @media screen and (min-width: 415px) {
