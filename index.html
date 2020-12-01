@@ -14,55 +14,162 @@
 
 <body>
   <div class="container">
-    <header class="blue">
+    <header>
       <div class="header__logo">
-        <picture>
-          <source media="(max-width: 414px)" srcset="images/logo-100w.svg">
-          <source media="(min-width: 415px)" srcset="images/logo-240w.svg">
           <img src="images/logo-240w.svg" alt="Nathaniel Mata site logo">
-        </picture>
       </div>
-      <div id="js-nav__toggle" class="nav__toggle">
-        <div class="nav__toggle-bar">
-          <img class="nav__img" src="images/menu-icon.svg" alt="Navigation menu toggle" />
-        </div>
-      </div>
-      <nav class="nav blue">
+      <nav class="nav">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a href="#home"><i class="icon-icon_home"></i><span>Home</span></a></li>
+          <li><a href="#about"><i class="icon-icon_person"></i><span>About</span></a></li>
+          <li><a href="#skills"><i class="icon-icon_tools"></i><span>Skills</span></a></li>
+          <li><a href="#projects"><i class="icon-icon_envelope"></i><span>Projects</span></a></li>
+          <li><a href="#contact"><i class="icon-icon_mail"></i><span>Contact</span></a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="hero" class="hero blue">
+      <section id="home" class="hero">
         <div class="hero__inner">
-          <div class="hero__image">
-            <div class="hero__image--inner">
-              <img src="images/hero.gif" alt="Nathaniel Mata portrait" />
-            </div>
-          </div>
-          <div class="hero__text">
-            <h1>I am a Web Developer living in Tempe, AZ.</h1>
-            <p>I like to use HTML, CSS, Javascript and sometimes Go to build things. When I'm not writing code I
-              like to drink coffee, play soccer and read about new technologies.</p>
+          <div class="hero__tagline">Curious. Adaptable. Collaborative</div>
+        </div>
+      </section>
+      <section id="about" class="section__container">
+        <div class="section__inner">
+          <h1><i class="icon-icon_person about"></i>About Me</h1>
+          <div class="about__text">
+            <p>
+              <img class="about__portrait" src="images/about-me-portrait.jpg" alt="Nathaniel Mata portrait"/>
+              <span>I've always loved creative problem solving. I've worked in the fields of commercial photography, graphic
+              design and digital fabrication all of which required a thoughtful approach to artfully achieve the
+              completion of projects.
+              <br /><br />
+              I also enjoy working on teams that learn and share ideas as part of the job. Learning from others is an important
+              part of my problem solving toolbelt.
+              <br /><br />
+              All of this informs my approach to web development in which collaboration and an
+              enthusiasm for continuous improvement and learning are key characteristics that I bring to each project.
+              <br /><br />
+              When I'm not working on HTML, Javascript and CSS I'm often found reading about the Go programming
+              language.
+              </span>
+              
+            </p>
           </div>
         </div>
       </section>
-      <section id="contact" class="contact blue">
-        <h3>Contact Me</h3>
-        <ul class="ul__btns">
-          <li><a href="mailto:nathaniel.hmata@gmail.com" class="a__btn-blue" target="_blank">Email</a></li>
-          <li><a href="https://github.com/nathanielmata" class="a__btn-blue" target="_blank">Github</a></li>
-          <li><a href="https://linkedin.com/in/nathaniel-mata-01a2151a8" class="a__btn-blue" target="_blank">LinkedIn</a></li>
-        </ul>
+      <section id="skills" class="section__container white">
+        <div class="section__inner">
+          <h1><i class="icon-icon_tools"></i>Skills</h1>
+          <div class="skills__text">
+            <ul>
+              <li>
+                <img src="images/skills-logos/html5-logo.png" alt="HTML5 logo" />
+                <p>HTML5</p>
+              </li>
+              <li>
+                <img src="images/skills-logos/css3-logo.png" alt="CSS3 logo" />
+                <p>CSS3</p>
+              </li>
+              <li>
+                <img src="images/skills-logos/javascript-logo.png" alt="javascript logo" />
+                <p>Javascript</p>
+              </li>
+              <li>
+                <img src="images/skills-logos/jquery-logo.png" alt="jQuery logo" />
+                <p>jQuery</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img src="images/skills-logos/reactjs-logo.png" alt="ReactJS logo" />
+                <p>ReactJS</p>
+              </li>
+              <li>
+                <img src="images/skills-logos/nodejs-logo.png" alt="NodeJS logo" />
+                <p>NodeJS</p>
+              </li>
+              <li>
+                <img src="images/skills-logos/express-logo.png" alt="ExpressJS logo" />
+                <p>ExpressJS</p>
+              </li>
+              <li>
+                <img src="images/skills-logos/heroku-logo.png" alt="Heroku logo" />
+                <p>Heroku</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img src="images/skills-logos/mocha-logo.png" alt="Mocha logo" />
+                <p>Mocha</p>
+              </li>
+              <li>
+                <img src="images/skills-logos/chai-logo.png" alt="Chai logo" />
+                <p>Chai</p>
+              </li>
+              <li>
+                <img src="images/skills-logos/postgres-logo.png" alt="Postgres logo" />
+                <p>Postgres</p>
+              </li>
+              <li>
+                <img src="images/skills-logos/github-logo.png" alt="Github logo" />
+                <p>Github</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
-      <section id="portfolio" class="section__container portfolio white">
+      <section id="projects" class="section__container portfolio white">
         <div class="section__inner portfolio__inner">
-          <h1>Projects</h1>
+          <h1><i class="icon-icon_envelope"></i>Projects</h1>
 
+          <div class="project">
+            <div class="project__image">
+              <img src="images/animation_station.png" alt="Animation Station CSS Animation Editing App" />
+            </div>
+            <div class="project__text">
+              <h2>CSS Animation Editing App</h2>
+              <p>'Animation Station' is an application that lets users create css animations using a graphical interface and then save the corresponding CSS code.</p>
+              <ul class="project__stack">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>ReactJS</li>
+                <li>Node</li>
+                <li>Express</li>
+              </ul>
+            </div>
+            <div class="project_links">
+              <ul class="ul__btns">
+                <li><a href="https://css-animator-capstone-client.vercel.app" class="a__btn-white" target="_blank">Demo</a></li>
+                <li><a href="https://github.com/nathanielmata/css-animator-capstone-client" class="a__btn-white" target="_blank">Code</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__image">
+              <img src="images/markdown_notes.png" alt="Markdown Notes App" />
+            </div>
+            <div class="project__text">
+              <h2>Markdown Notes App</h2>
+              <p>'Markdown Notes' is a note taking app that lets you create notes in a markdown editor and preview the html output, then save the note to your user account.</p>
+              <ul class="project__stack">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>ReactJS</li>
+                <li>Node</li>
+                <li>Express</li>
+              </ul>
+            </div>
+            <div class="project_links">
+              <ul class="ul__btns">
+                <li><a href="https://markdown-notes-capstone-client.vercel.app" class="a__btn-white" target="_blank">Demo</a></li>
+                <li><a href="https://github.com/nathanielmata/markdown-notes-capstone-client" class="a__btn-white" target="_blank">Code</a></li>
+              </ul>
+            </div>
+          </div>
           <div class="project">
             <div class="project__image">
               <img src="images/quizapp.png" alt="Time, Distance, Speed Quiz App" />
@@ -88,67 +195,26 @@
           </div>
         </div>
       </section>
-      <section id="about" class="section__container blue">
-        <div class="section__inner">
-          <h1>About Me</h1>
-          <div class="about__text">
-            <p>
-              I've always loved creative problem solving. I've worked in the fields of commercial photography, graphic
-              design and digital fabrication all of which required a thoughtful approach to artfully achieve the
-              completion of projects.
-              <br /><br />
-              I also enjoy working on teams that learn and share ideas as part of the job. Learning from others is an important
-              part of my problem solving toolbelt.
-              <br /><br />
-              All of this informs my approach to web development in which collaboration and an
-              enthusiasm for continuous improvement and learning are key characteristics that I bring to each project.
-              <br /><br />
-              When I'm not working on HTML, Javascript and CSS I'm often found reading about the Go programming
-              language.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="skills" class="section__container white">
-        <div class="section__inner">
-          <h1>Skills</h1>
-          <div class="skills__text">
-            <ul>
-              <li>
-                <h5>Languages</h5>
-                <p>HTML5, CSS3, Javascript</p>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h5>Libraries</h5>
-                <p>jQuery & ReactJS</p>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h5>Databases</h5>
-                <p>PostgreSQL & MySQL</p>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <section id="contact" class="contact">
+        <h3><i class="icon-icon_mail"></i>Contact Me</h3>
+        <ul class="ul__btns contact__btns">
+          <li><a href="mailto:nathaniel.hmata@gmail.com" target="_blank"><img alt="email" src="images/contact-logos/mail_dark.svg" /></img></a></li>
+          <li><a href="https://github.com/nathanielmata" target="_blank"><img alt="github" src="images/contact-logos/github_dark.svg" /></a></li>
+          <li><a href="https://linkedin.com/in/nathaniel-mata-01a2151a8" target="_blank"><img alt="LinkedIn" src="images/contact-logos/linkedin_dark.svg" /></a></li>
+        </ul>
       </section>
 
     </main>
   </div>
   <footer>
-    <div class="footer__copy">Site built by Nathaniel Mata <span id="footer__date" class="footer__date"></span></div>
+    <div class="footer__copy">© Nathaniel Mata <span id="footer__date" class="footer__date"></span></div>
     <script>
       let yearDate = new Date().getUTCFullYear();
       let copyDate = document.getElementById("footer__date");
       copyDate.innerHTML = yearDate;
     </script>
   </footer>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
+  
 </body>
 
 </html>
