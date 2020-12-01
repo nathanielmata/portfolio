@@ -177,6 +177,10 @@ header li > a:hover {
 	background-repeat: no-repeat;
 }
 
+.hero h1 {
+  display: none;
+}
+
 .hero__inner {
 	position: absolute;
 	bottom: 14px;
@@ -193,6 +197,9 @@ header li > a:hover {
 	text-align: right;
   color: white;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .about__portrait {
